@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Emilio Puga's Portafolio</title>
+        <title>Emilio Puga's Portfolio</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&family=Libre+Franklin:wght@300;400;600&family=Rock+Salt&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="header-container">
-                <h1 cursive>Emilio Puga</h1>
-                <h1>'s Portafolio</h1>
+                <h1>
+                    <span class="cursive-header">Emilio Puga</span>
+                    <span>'s Portfolio</span>
+                </h1>
                 <nav>
                     <a href="home.html">Inicio</a>
                     <a href="about-me.html">Sobre Mí</a>
@@ -23,26 +25,110 @@
                 </nav>
             </div>
         </header>
-        <div class="flex-container">         <!-- Recordar: para agrupar elementos -->
-            <main>
-                <h2>Bienvenido a mi portafolio</h2>
-                <p>Contenido de la página de inicio</p>
+
+        <!-- Primera parte -->
+        <div class="flex-container">         
+            <main style="flex: 2.3;">
+                <img src="assets/IEEE CS.png" alt="Fotografía de presentación de directivas IEEE con Emilio Puga como secretario." 
+                style="width: 100%; height: auto; display: block; margin: auto;">
             </main>
             <aside>
-                <h3>Proyectos Recientes</h3>
-                <p>Lista de los últimos proyectos</p>
+                <h1>
+                    <span style="font-weight: normal; font-size: 50px;">Hola,</span>
+                    <span style="font-weight: lighter; font-size: 25px;">soy</span>
+                    <span class="cursive-header" style="font-size: 35px;">Emilio Puga</span>
+                </h1>
+                <div class="line"></div>
+                <p>Soy un estudiante de Ingeniería en <b>Ciencias de la Computación</b> en la USFQ apasionado por el diseño de <b>UI/UX</b>.</p>
+                <p>Me interesa conocer cada paso del desarrollo de software y qué implementar para mejorar su nivel de interacción.</p>
+                <p>He trabajado en varios proyectos enfocados hacia la accesibilidad y la facilidad de uso de aplicaciones. ¡Te invito a revisarlos a continuación!</p>
+                <img src="assets/down_arrow.png" alt="Flecha hacia abajo" style="width: 100px;">
             </aside>
         </div>
-        <div class="flex-container">         <!-- Recordar: para agrupar elementos -->
+        <div class ="space"></div>
+
+        <!-- Proyectos -->
+        <div class="flex-container">        
             <main>
-                <h2>Bienvenido a mi portafolio</h2>
-                <p>Contenido de la página de inicio</p>
+                <div class="proj-container">
+                    <main><img src="assets/wordle-solver-img.png" alt=""></main>
+                    <aside>
+                        <div class="column">
+                            <h2>Wordle Solver</h2>
+                            <p>Una app hecha en Python que resuelve Wordle con predicción de palabras en menos de 6 intentos.</p>
+                        </div>
+                    </aside>
+                </div>
             </main>
             <aside>
-                <h3>Proyectos Recientes</h3>
-                <p>Lista de los últimos proyectos</p>
+                <div class="proj-container">
+                    <main><img src="assets/foto-img.png" alt=""></main>
+                    <aside>
+                        <div class="column">
+                            <h2>Fotografía</h2>
+                            <p>Proyectos personales de fotografías. Incluye paisajes, retratos, fotografías de plantas, entre otros.</p>
+                        </div>
+                    </aside>
+                </div>
             </aside>
         </div>
+        <div class ="space"></div>
+        <div class="flex-container">        
+            <main>
+                <div class="proj-container">
+                    <main><img src="assets/apoyo-academico-img.png" alt=""></main>
+                    <aside>
+                        <div class="column">
+                            <h2>Apoyo Académico</h2>
+                            <p>Tutorías de física y matemática para estudiantes de colegio y universidad.</p>
+                        </div>
+                    </aside>
+                </div>
+            </main>
+            <aside>
+                <div class="proj-container">
+                    <main><img src="assets/everything-calculator-img.png" alt=""></main>
+                    <aside>
+                        <div class="column">
+                            <h2>Everything Calculator</h2>
+                            <p>Aplicación interactiva y educativa de drag & drop de ecuaciones, vectores y campos vectoriales.</p>
+                        </div>
+                    </aside>
+                </div>
+            </aside>
+        </div>
+        <div class="space"></div>
+        <div class="line"></div>
+        <div class="space"></div>
+
+        <!-- Te gusta lo que ves -->
+        <div class="flex-container">
+            <main>
+                <div class="column" style="display: flex; justify-content: center; align-items: center;">
+                    <h1>¿Te gusta lo que ves?</h1>
+                    <p>Sigamos conversando, estoy disponible para más proyectos.</p>
+                </div>
+            </main>
+            <aside>
+                <div class="flex-container">
+                    <main>
+                        <img src="assets/milo.png" alt="Fotografía de Emilio Puga">
+                    </main>
+                    <aside>
+                        <div class="column">
+                            <h2>Emilio Puga</h2>
+                            <p>milo18113@gmail.com<br>
+                                +593984452887
+                            </p>
+                            <button>Contáctame</button>
+                        </div>
+                    </aside>
+                </div>
+            </aside>
+        </div>
+
+        <div class="space"></div>
+
         <footer>
             <p>&copy; 2026 Emilio Puga</p>
         </footer>

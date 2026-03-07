@@ -1,5 +1,14 @@
+:root {
+    /* --debug-border: #31d43e solid 1px; */
+    --debug-border: none;
+    --my-turquoise: #15BBE5;
+    --hover-turquoise: #42cdf0;
+}
+
 body {
     font-family: Libre Franklin, sans-serif;
+    font-size: 18px;
+    /* font-family: Hanken Grotesk, sans-serif; */
     margin: 0px;
     padding: 0px;
     /* border: #31d43e solid 1px; */
@@ -8,10 +17,61 @@ body {
     /* min-width: 666px; */
 }
 
-.flex-container {
+/* .flex-container-center {
     display: flex;
     min-height: 600px;
     background-color: black;
+    align-items: center; 
+} */
+
+.flex-container {
+    display: flex;
+    padding: 0px 70px 0px 70px;
+    /* min-height: 600px; */
+    background-color: black;
+    align-items: flex-start;
+    /* justify-items: center; */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.proj-container {
+    display: flex;
+    padding: 0px;
+    /* min-height: 600px; */
+    background-color: black;
+    align-items: flex-start;
+    /* justify-items: center; */
+}
+
+.proj-container main {
+    flex: 1;
+}
+
+.proj-container aside {
+    flex: 6;
+}
+
+.proj-container img {
+    width: 300px;
+    height: auto;
+    display: block;     /* Center horizontal */
+    margin: auto;
+}
+
+.space {
+    margin: 50px 0;
+}
+
+.line {
+    background-color: var(--my-turquoise);
+    height: 2px;
+    width: 50%;
+    margin-left: auto;
 }
 
 header{           /* Varios elementos */
@@ -22,14 +82,16 @@ header{           /* Varios elementos */
     /* border: #31d43e solid 1px; */
 }
 
-.cursive {
+.cursive-header {
     font-family: 'Rock Salt', cursive;
+    font-size: 17pt;
+    font-weight: normal;
 }
 
 footer {
-    background-color: black;
-    color: white;
-    padding: 10px 20px 10px 20px;
+    background-color: var(--my-turquoise);
+    color: rgb(0, 0, 0);
+    padding: 5px 20px 5px 20px;
     text-align: center;
 }
 
@@ -64,17 +126,17 @@ main {
     flex: 2;
     background-color: black;
     padding: 5px 20px 5px 20px;
-    border: #31d43e solid 1px;
+    border: var(--debug-border);
 }
 
 aside {
     flex: 2;
     padding: 5px 20px 5px 20px;
-    border: #31d43e solid 1px;
+    border: var(--debug-border);
 }
 
 button {
-    background-color: #15BBE5;
+    background-color: var(--my-turquoise);
     font-family: Libre Franklin, sans-serif;
     font-size: medium;
     color: black;
@@ -84,7 +146,7 @@ button {
 }
 
 button:hover {
-    background-color: #42cdf0;
+    background-color: var(--hover-turquoise);
 }
 
 @media (max-width: 600px){      /* Sidebar se pone abajo si llego a menos de 600 */
