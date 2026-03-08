@@ -23,13 +23,6 @@ body {
     min-width: 690px;
 }
 
-/* .flex-container-center {
-    display: flex;
-    min-height: 600px;
-    background-color: black;
-    align-items: center; 
-} */
-
 .flex-container {
     display: flex;
     padding: 0px 70px 0px 70px;
@@ -38,13 +31,6 @@ body {
     align-items: flex-start;
     /* justify-items: center; */
 }
-
-/* .flex-container main {
-    padding: 0;
-}
-.flex-container aside {
-    padding: 0;
-} */
 
 .column {
     display: flex;
@@ -86,6 +72,10 @@ body {
 
 .smallspace {
     margin: 15px 0;
+}
+
+.smallerspace {
+    margin: 9px 0;
 }
 
 .hsmallspace {
@@ -192,6 +182,31 @@ button {
 
 button:hover {
     background-color: var(--button-hover-turquoise);
+}
+
+form {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.titlelabel {
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+.contentlabel {
+    margin: 0;
+}
+
+.textbox {
+    padding: 10px;
+    font-family: Libre Franklin, sans-serif;
+    font-size: 16px;
+    border: 1px solid var(--my-turquoise);
+    background-color: black;
+    color: white;
+    border-radius: 5px;
 }
 
 @media (max-width: 1000px){      /* Sidebar se pone abajo si llego a menos de 600 */

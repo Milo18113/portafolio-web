@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Contacto - Emilio Puga's Portfolio</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&family=Libre+Franklin:wght@300;400;600&family=Rock+Salt&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>
+                    <span class="cursive-header">Emilio Puga</span>
+                    <span>'s Portfolio</span>
+                </h1>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="about-me.html">Sobre Mí</a>
+                    <a href="index.html#proyectos">Proyectos</a>
+                    <button onclick="window.location.href='contact.html'">Contacto</button>
+                    <!-- <button onclick="console.log(document.body.offsetWidth)">Contacto</button> -->
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contacto -->
+        <div class="flex-container">         
+            <main style="flex: 1;">
+                <div class="column">
+                    <h1 style="font-weight: bold; font-size: 50px;">
+                        Contacto
+                    </h1>
+                    <div class="line"></div>
+                    <p>Estoy siempre interesado en nuevos proyectos y colaboraciones. No dudes en contactarme si tienes alguna idea que quieras desarrollar o simplemente quieres conversar sobre tecnología y diseño.</p>
+                    <p>Puedes comunicarte conmigo a través del siguiente formulario o directamente a mi correo electrónico.</p>
+                    <div class="smallspace"></div>
+                    <div class="flex-container">
+                        <main>
+                            <img src="assets/milo.png" alt="Fotografía de Emilio Puga" width="170px">
+                        </main>
+                        <aside>
+                            <div class="column">
+                                <h2>Emilio Puga</h2>
+                                <p>milo18113@gmail.com<br>
+                                    +593984452887
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </main>
+            <aside style="flex: 1;">
+                <div class="space"></div>
+                <div class="space"></div>
+                <div class="space"></div>
+                <form action="mailto:milo18113@gmail.com" method="post" enctype="text/plain">
+                    <div class="column">
+                        <label class="titlelabel" for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required class="textbox">
+                        
+                        <div class="smallerspace"></div>
+
+                        <label class="titlelabel" for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" required class="textbox">
+                    
+                        <div class="smallerspace"></div>
+
+                        <div style="display: flex; align-items: center; gap: 10px;"> <!-- row -->
+                            <input type="checkbox" id="notificar" name="notificar" style="width: 20px; height: 20px;">
+                            <label class="contentlabel" for="notificar">Notificar sobre nuevos proyectos</label>
+                        </div>
+                    
+                        <div class="smallerspace"></div>
+
+                        <label class="titlelabel">Área de interés</label>
+                        <div class="column" style="gap: 8px;">
+                            <div style="display: flex; align-items: center; gap: 10px;"> <!-- radio rows -->
+                                <input type="radio" id="fotografia" name="interes" value="fotografia">
+                                <label for="fotografia" class="contentlabel">Fotografía</label>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <input type="radio" id="uiux" name="interes" value="uiux">
+                                <label for="uiux" class="contentlabel">Diseño de UI/UX</label>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <input type="radio" id="backend" name="interes" value="backend">
+                                <label for="backend" class="contentlabel">Desarrollo de back-end</label>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <input type="radio" id="frontend" name="interes" value="frontend">
+                                <label for="frontend" class="contentlabel">Desarrollo de front-end</label>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <input type="radio" id="apoyo" name="interes" value="apoyo">
+                                <label for="apoyo" class="contentlabel">Apoyo académico</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="bigbtn" style="width: auto; padding: 15px 30px;">Enviar</button>
+                </form>
+            </aside>
+        </div>
+        <div class="space"></div>
+        <div class="space"></div>
+
+        <footer>
+            <p>&copy; 2026 Emilio Puga</p>
+        </footer>
+    </body> 
+</html>
