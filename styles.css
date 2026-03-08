@@ -6,6 +6,7 @@ html {
     /* --debug-border: #31d43e solid 1px; */
     --debug-border: none;
     --button-turquoise: #15BBE5;
+    --button-hover-turquoise: #b0d7ea;
     --my-turquoise: #2a9dcd;
     --hover-turquoise: #42cdf0;
 }
@@ -37,6 +38,13 @@ body {
     align-items: flex-start;
     /* justify-items: center; */
 }
+
+/* .flex-container main {
+    padding: 0;
+}
+.flex-container aside {
+    padding: 0;
+} */
 
 .column {
     display: flex;
@@ -183,7 +191,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--hover-turquoise);
+    background-color: var(--button-hover-turquoise);
 }
 
 @media (max-width: 1000px){      /* Sidebar se pone abajo si llego a menos de 600 */
