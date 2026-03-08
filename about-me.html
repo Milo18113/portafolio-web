@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Emilio Puga's Portfolio</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&family=Libre+Franklin:wght@300;400;600&family=Rock+Salt&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>
+                    <span class="cursive-header">Emilio Puga</span>
+                    <span>'s Portfolio</span>
+                </h1>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="about-me.html">Sobre Mí</a>
+                    <a href="index.html#proyectos">Proyectos</a>
+                    <button onclick="window.location.href='contact.html'">Contacto</button>
+                    <!-- <button onclick="console.log(document.body.offsetWidth)">Contacto</button> -->
+                </nav>
+            </div>
+        </header>
+
+        <!-- Primera parte -->
+        <div class="flex-container">         
+            <main style="flex: 0.75;">
+                <img src="assets/milo.png" alt="Fotografía de Emilio Puga" 
+                style="width: 260px; height: auto; display: block; margin: auto;">
+            </main>
+            <aside>
+                <h1 style="font-weight: bold; font-size: 50px;">
+                    Sobre Mí
+                </h1>
+                <div class="line"></div>
+                <p>Soy estudiante de Ingeniería en Ciencias de la Computación, pero más allá de eso, soy una persona curiosa que disfruta entender cómo funciona el mundo, tanto desde lo técnico como desde lo humano.</p>
+                <p>Me gusta programar porque me encanta construir cosas: desde resolver problemas lógicos hasta desarrollar proyectos completos. Mi motivación para la creación de software fue: no basta con que un sistema funcione, también importa cómo se siente usarlo y cómo se puede simplificar la experiencia para el usuario.</p>
+                <p>Por eso estoy empezando mi camino en UX/UI, porque me interesa crear tecnología que no solo sea eficiente, sino también clara, intuitiva y pensada para las personas.</p>
+                <a href="#hobbies"><img src="assets/down_arrow.png" alt="Flecha hacia abajo" style="width: 100px;"></a>
+            </aside>
+        </div>
+        <div class="space"></div>
+        <div class="line"></div>
+        <div class="smallspace"></div>
+
+        <!-- Mis Hobbies -->
+        <div id="hobbies" class="flex-container">
+            <main><h1>Mis Hobbies</h1></main>
+            <aside></aside>
+        </div>
+        <div id="proyectos" class="flex-container">        
+            <main>
+                <div class="proj-container">
+                    <main><img src="assets/escalada.jpg" alt=""></main>
+                    <aside>
+                        <div class="column">
+                            <h2>Escalada</h2>
+                            <p>Una app hecha en Python que resuelve Wordle con predicción de palabras en menos de 6 intentos.</p>
+                        </div>
+                    </aside>
+                </div>
+            </main>
+            <aside>
+                <div class="proj-container">
+                    <main><img src="assets/playlists.png" alt=""></main>
+                    <aside>
+                        <div class="column">
+                            <h2>Música</h2>
+                            <p>Proyectos personales de fotografías. Incluye paisajes, retratos, fotografías de plantas, entre otros.</p>
+                        </div>
+                    </aside>
+                </div>
+            </aside>
+        </div>
+        <div class="space"></div>
+        <div class="line"></div>
+        <div class="smallspace"></div>
+
+        <!-- Mi Formación -->
+        <div id="hobbies" class="flex-container">
+            <main><h1>Mi Formación</h1></main>
+            <aside></aside>
+        </div>
+        <div id="proyectos" class="flex-container">        
+            <main>
+                <div class="proj-container">
+                    <main><img src="assets/terra-icon.png" alt="" style="width: 130px;"></main>
+                    <aside>
+                        <div class="column">
+                            <h2>Colegio Terranova</h2>
+                            <p>Calle de las Rieles, OE10-230, Cumbayá, Ecuador</p>
+                        </div>
+                    </aside>
+                </div>
+            </main>
+            <main>
+                <div class="proj-container">
+                    <main><img src="assets/sek-icon.png" alt="" style="width: 130px;"></main>
+                    <aside>
+                        <div class="column">
+                            <h2>Sek Ciudalcampo</h2>
+                            <p>Paseo de las Perdices, 2, 28707, San Sebastián de los Reyes, Madrid, España</p>
+                        </div>
+                    </aside>
+                </div>
+            </main>
+            <main>
+                <div class="proj-container">
+                    <main><img src="assets/usfq-icon.png" alt="" style="width: 130px;"></main>
+                    <aside>
+                        <div class="column">
+                            <h2>USFQ</h2>
+                            <p>Av. Diego de Robles & Vía Interoceánica, Cumbayá, Ecuador</p>
+                        </div>
+                    </aside>
+                </div>
+            </main>
+        </div>
+        <div class="space"></div>
+        <div class="line"></div>
+        <div class="space"></div>
+
+
+        <!-- Te gusta lo que ves -->
+        <div class="flex-container">
+            <main>
+                <div class="column" style="display: flex; justify-content: center; align-items: center;">
+                    <h1>¿Te gusta lo que ves?</h1>
+                    <p>Sigamos conversando, estoy disponible para más proyectos.</p>
+                </div>
+            </main>
+            <aside>
+                <div class="flex-container">
+                    <main>
+                        <img src="assets/milo.png" alt="Fotografía de Emilio Puga" width="170px">
+                    </main>
+                    <aside>
+                        <div class="column">
+                            <h2>Emilio Puga</h2>
+                            <p>milo18113@gmail.com<br>
+                                +593984452887
+                            </p>
+                            <button onclick="window.location.href='contact.html'">Contáctame</button>
+                        </div>
+                    </aside>
+                </div>
+            </aside>
+        </div>
+
+        <div class="space"></div>
+
+        <footer>
+            <p>&copy; 2026 Emilio Puga</p>
+        </footer>
+    </body> 
+</html>
