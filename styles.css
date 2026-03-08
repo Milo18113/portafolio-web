@@ -1,7 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     /* --debug-border: #31d43e solid 1px; */
     --debug-border: none;
-    --my-turquoise: #15BBE5;
+    --button-turquoise: #15BBE5;
+    --my-turquoise: #2a9dcd;
     --hover-turquoise: #42cdf0;
 }
 
@@ -14,7 +19,7 @@ body {
     /* border: #31d43e solid 1px; */
     background-color: black;
     color: white;
-    /* min-width: 666px; */
+    min-width: 690px;
 }
 
 /* .flex-container-center {
@@ -45,7 +50,7 @@ body {
     /* min-height: 600px; */
     background-color: black;
     align-items: flex-start;
-    /* justify-items: center; */
+    /* justify-items: flex-start; */
 }
 
 .proj-container main {
@@ -67,8 +72,34 @@ body {
     margin: 50px 0;
 }
 
+.hspace {
+    margin: 0 50px;
+}
+
+.smallspace {
+    margin: 15px 0;
+}
+
+.hsmallspace {
+    margin: 15px 15px;
+}
+
+.bigbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.bigbtn img {
+    width: 40px;
+    height: 40px;
+}
+
 .line {
-    background-color: var(--my-turquoise);
+    background-color: var(--button-turquoise);
     height: 2px;
     width: 50%;
     margin-left: auto;
@@ -89,9 +120,10 @@ header{           /* Varios elementos */
 }
 
 footer {
+    /* background-color: var(--my-turquoise); */
     background-color: var(--my-turquoise);
-    color: rgb(0, 0, 0);
-    padding: 5px 20px 5px 20px;
+    color: white;
+    padding: 3px 20px 3px 20px;
     text-align: center;
 }
 
@@ -112,8 +144,13 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    color: rgb(212, 212, 212);
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--hover-turquoise);
 }
 
 .header-container {
@@ -136,7 +173,7 @@ aside {
 }
 
 button {
-    background-color: var(--my-turquoise);
+    background-color: var(--button-turquoise);
     font-family: Libre Franklin, sans-serif;
     font-size: medium;
     color: black;
@@ -149,7 +186,7 @@ button:hover {
     background-color: var(--hover-turquoise);
 }
 
-@media (max-width: 600px){      /* Sidebar se pone abajo si llego a menos de 600 */
+@media (max-width: 1000px){      /* Sidebar se pone abajo si llego a menos de 600 */
     .flex-container {
         flex-direction: column;
     }

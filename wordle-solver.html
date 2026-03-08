@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Emilio Puga's Portfolio</title>
+        <title>Wordle Solver - Proyecto</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
 
@@ -26,28 +26,98 @@
             </div>
         </header>
 
-        <!-- Primera parte -->
+        <!-- Intro -->
         <div class="flex-container">         
-            <main style="flex: 2.3;">
-                <img src="assets/IEEE CS.png" alt="Fotografía de presentación de directivas IEEE con Emilio Puga como secretario." 
-                style="width: 100%; height: auto; display: block; margin: auto;">
+            <main>
+                <div class="column">
+                    <h1 style="font-weight: bold; font-size: 50px;">
+                        Wordle Solver
+                    </h1>
+                    <div class="line"></div>
+                    <p>Esta aplicación fue desarrollada en Python para poner en práctica mis habilidades con el lenguaje. </p>
+                    <p>Se emplañaron dos técnicas de predicción de palabras para ganar el juego, las cuales se describen a continuación. </p>
+                    <p>El sistema funciona con una interfaz de consola, y próximamente se añadirá un front-end mediante la librería streamlit de Python.</p>
+                    <div class="smallspace"></div>
+                    <div class="flex-container">
+                        <main>
+                            <img src="assets/python-logo.png" alt="Logo de Python">
+                        </main>
+                        <aside>
+                            <img src="assets/streamlit-logo.png" alt="Logo de Streamlit">
+                        </aside>
+                    </div>
+                    <div class="smallspace"> </div>
+                    <div class="flex-container">
+                        <button class="bigbtn" onclick="window.location.href='https://github.com/Milo18113'"><img src="assets/github-logo.png">Ver en Github</button>
+                        <div class="hsmallspace"></div>
+                        <button class="bigbtn" onclick="window.location.href='https://github.com/Milo18113'"><img src="assets/web-icon.png">Ver en Web</button>
+                    </div>
+                </div>
             </main>
             <aside>
-                <h1>
-                    <span style="font-weight: normal; font-size: 50px;">Hola,</span>
-                    <span style="font-weight: lighter; font-size: 25px;">soy</span>
-                    <span class="cursive-header" style="font-size: 35px;">Emilio Puga</span>
-                </h1>
-                <div class="line"></div>
-                <p>Soy un estudiante de Ingeniería en <b>Ciencias de la Computación</b> en la USFQ apasionado por el diseño de <b>UI/UX</b>.</p>
-                <p>Me interesa conocer cada paso del desarrollo de software y qué implementar para mejorar su nivel de interacción.</p>
-                <p>He trabajado en varios proyectos enfocados hacia la accesibilidad y la facilidad de uso de aplicaciones. ¡Te invito a revisarlos a continuación!</p>
-                <a href="#proyectos"><img src="assets/down_arrow.png" alt="Flecha hacia abajo" style="width: 100px;"></a>
+                <img src="assets/wordle-solver1.png" alt="Prueba del programa Wordle Solver en consola." 
+                style="width: 100%; height: auto; display: block; margin: auto;">
             </aside>
         </div>
-        <div class ="space"></div>
+        <div class="space"></div>
+        <div class="line"></div>
+        <div class="smallspace"></div>
+
+        <!-- Arquitectura -->
+        <div class="flex-container">
+            <main>
+                <div class="column">
+                    <h1>Arquitectura</h1>
+                    <p><b>Patrón de diseño:</b> Segregación de responsabilidades con componentes especializados en clases separadas</p>
+                    <div class="column">
+                        <div class="flex-container">
+                            <main>
+                                <h2>Orchestrator</h2>
+                            </main>
+                            <aside style="flex: 2;">
+                                <p>Controlador principal que coordina el flujo del juego</p>
+                            </aside>
+                        </div>
+                        <div class="flex-container">
+                            <main>
+                                <h2>Solver</h2>
+                            </main>
+                            <aside style="flex: 2;">
+                                <p>Motor heurístico que genera predicciones inteligentes</p>
+                            </aside>
+                        </div>
+                        <div class="flex-container">
+                            <main>
+                                <h2>Validator</h2>
+                            </main>
+                            <aside style="flex: 2;">
+                                <p>Sistema de validación y retroalimentación para el solver</p>
+                            </aside>
+                        </div>
+                        <div class="flex-container">
+                            <main>
+                                <h2>Word</h2>
+                            </main>
+                            <aside style="flex: 2;">
+                                <p>Modelo de datos central con lógica de palabras (posibilidad, texto, pistas, etc)</p>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside>
+                <img src="assets/wordle-solver2.png" alt="Capturas de pantalla de creación de clase Solver" style="width: 100%; height: auto; display: block; margin: auto;">
+            </aside>
+        </div>
+        <div class="space"></div>
+        <div class="line"></div>
+        <div class="smallspace"></div>
 
         <!-- Proyectos -->
+        <div class="flex-container">
+            <main><h1>Más Proyectos</h1></main>
+            <aside></aside>
+        </div>
         <div id="proyectos" class="flex-container">        
             <main>
                 <div class="proj-container">
